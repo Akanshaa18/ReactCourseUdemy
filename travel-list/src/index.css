@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -11,10 +11,9 @@ html {
 }
 
 body {
-  font-size: 2.4rem;
-  font-family: sans-serif;
-  color: #5a3e2b;
-  font-family: "Quicksand";
+  font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
   font-weight: 500;
 }
 
@@ -27,18 +26,19 @@ body {
 
 h1 {
   text-align: center;
-  background-color: #f4a226;
-  font-family: "Monoton";
+  color: "white";
+  background-color: #867070;
+  font-family: "Montserrat", sans-serif;
   font-size: 8rem;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 700;
   word-spacing: 30px;
   letter-spacing: -5px;
   padding: 2.4rem 0;
 }
 
 .add-form {
-  background-color: #e5771f;
+  background-color: #d5b4b4;
   padding: 2.8rem 0;
   display: flex;
   align-items: center;
@@ -54,25 +54,25 @@ h3 {
 button,
 select,
 input {
-  background-color: #ffebb3;
-  color: #5a3e2b;
+  background-color: #e4d0d0;
+  color: #000000;
   font-family: inherit;
   border: none;
   border-radius: 10rem;
   padding: 1.2rem 3.2rem;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.8rem;
   cursor: pointer;
 }
 
 .add-form button {
   text-transform: uppercase;
-  background-color: #76c7ad;
+  background-color: #f5ebeb;
 }
 
 .list {
-  background-color: #5a3e2b;
-  color: #ffebb3;
+  background-color: #e4d0d0;
+  color: #000000;
   padding: 4rem 0;
 
   display: flex;
@@ -112,7 +112,7 @@ input {
 input[type="checkbox"] {
   height: 2rem;
   width: 2rem;
-  accent-color: #e5771f;
+  accent-color: #f5ebeb;
 }
 
 .list li button {
@@ -125,11 +125,11 @@ input[type="checkbox"] {
 }
 
 .stats {
-  background-color: #76c7ad;
+  background-color: #f5ebeb;
   text-align: center;
-  font-weight: 700;
+  font-weight: 500;
   padding: 3.2rem 0;
-  position: relative;
+  position: fixed;
   bottom: 0;
   width: 100%;
 }
