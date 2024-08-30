@@ -35,25 +35,14 @@ const App = () => {
             <div className={step >= 2 && "active"}>2</div>
             <div className={step === 3 && "active"}>3</div>
           </div>
-          <p className="message">
-            Step
-            {step === 1 && " " + step + ": " + messages[step - 1]}
-            {step === 2 && " " + step + ": " + messages[step - 1]}
-            {step === 3 && " " + step + ": " + messages[step - 1]}
-          </p>
+          <Message step={step}>{messages[step - 1]}</Message>
           <div className="buttons">
-            <button
-              style={{ backgroundColor: "#C7C8CC" }}
-              onClick={handleClickPrev}
-            >
+            <Button bgColor={"#C7C8CC"} click={handleClickPrev}>
               Previous
-            </button>
-            <button
-              style={{ backgroundColor: "#C7C8CC" }}
-              onClick={handleClickNext}
-            >
+            </Button>
+            <Button bgColor={"#C7C8CC"} click={handleClickNext}>
               Next
-            </button>
+            </Button>
           </div>
         </div>
       )}
@@ -62,3 +51,18 @@ const App = () => {
 };
 
 export default App;
+
+function Message({ step, children }) {
+  return (
+    <p className="message">
+      Step {step}: {children}
+    </p>
+  );
+}
+function Button({ bgColor, click, children }) {
+  return (
+    <button style={{ backgroundColor: bgColor }} onClick={click}>
+      {children}
+    </button>
+  );
+}
